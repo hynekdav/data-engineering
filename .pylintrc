@@ -1,0 +1,23 @@
+# Based on:
+# https://github.com/kpreid/shinysdr/blob/master/pylintrc
+
+[MASTER]
+# XXX should be changed to your project folder
+# see http://stackoverflow.com/a/37238692/3828891 for explanation
+# init-hook='base_dir="./"; import sys,os,re; _re=re.search(r".+\/" + base_dir, os.getcwd()); project_dir = _re.group() if _re else os.path.join(os.getcwd(), base_dir); sys.path.append(project_dir)'
+ignore-patterns=test_.*?py
+
+[MESSAGES CONTROL]
+# Find available symbolic names in:
+# https://docs.pylint.org/features.html
+disable=locally-disabled,trailing-whitespace,fixme,missing-docstring,missing-module-docstring,protected-access,invalid-name,super-init-not-called,inherit-non-class,no-method-argument,unused-argument,too-many-return-statements,too-many-branches,too-many-function-args,too-many-instance-attributes,too-many-locals,unnecessary-lambda,global-statement,line-too-long,missing-final-newline,no-else-return,wrong-import-order,too-many-arguments,no-member,unspecified-encoding,consider-using-in,too-few-public-methods,too-many-nested-blocks,broad-except,logging-fstring-interpolation,too-many-statements
+
+[SIMILARITIES]
+# Minimum lines number of a similarity.
+min-similarity-lines=8
+# Ignore comments when computing similarities.
+ignore-comments=yes
+# Ignore docstrings when computing similarities.
+ignore-docstrings=yes
+# Ignore imports when computing similarities.
+ignore-imports=yes
