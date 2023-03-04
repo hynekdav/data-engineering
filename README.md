@@ -19,7 +19,7 @@ docker build -t data-engineering .
 And then run:
 
 ```bash
-docker docker run --rm -it -p 8501:8501 data-engineering
+docker run --rm -it -p 8501:8501 data-engineering
 ```
 
 What happens first is Dagster will load the and process the necessary data and store them in `/tmp/criminality.pqt` (
